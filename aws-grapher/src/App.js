@@ -3,7 +3,7 @@ import { ReactFlow, Background, Controls, ReactFlowProvider } from '@xyflow/reac
 import '@xyflow/react/dist/style.css';
 import LambdaNode from './LambdaNode';
 import LogsNode from './LogsNode';
-
+import { MiniMap } from '@xyflow/react';
 const nodeTypes = {
   lambda: LambdaNode,
   logs: LogsNode,
@@ -74,6 +74,7 @@ const App = () => {
         >
           <Background />
           <Controls />
+          <MiniMap />
         </ReactFlow>
       </div>
     </ReactFlowProvider>
